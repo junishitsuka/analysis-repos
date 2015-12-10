@@ -9,6 +9,7 @@ def main():
         driver.get(url)
         data = driver.page_source.encode('utf-8')
         url = get_page_content(data)
+        sleep(3)
     driver.quit()
     return 
 
